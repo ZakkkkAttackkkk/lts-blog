@@ -1,0 +1,49 @@
+﻿@media screen and (max-width:600px){
+	body{
+		width:auto;
+		font-size:0.6em;
+	}
+}
+html{
+	background-color: #000;
+	color: #fff;
+	font-family: "Menlo", "Consolas", "Courier New", monospace;
+}
+body{
+	width: 50em;
+	margin: 1em auto;
+}
+h1,h2,nav{
+	margin: 0 auto;
+	text-align: center;
+}
+a{
+	color: #ccc;
+	text-decoration: none;
+}
+a::before{
+	content:'[';
+}
+a::after{
+	content:']';
+}
+article{
+	position:relative;
+}
+blockquote::before{
+	content:'“';
+	display:inline-block;
+	position: absolute;
+	left:0em;
+	font-size: 3em;
+}
+blockquote::after{
+	content:'”';
+	display:inline-block;
+	position: absolute;
+	right:0em;
+	font-size: 3em;
+}
+blockquote{
+	margin-top:3em;
+}
